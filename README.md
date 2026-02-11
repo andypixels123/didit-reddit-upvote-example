@@ -24,6 +24,8 @@ The project is a work in progress and is not yet complete.
 3. Create a `.env.local` file in the root directory and add the following environment variables:
    - `DATABASE_URL` - the URL of your Postgres database (eg. the Supabase connection string)
    - `AUTH_SECRET` - the Next Auth secret string (this can be anything at all like a password, but keep it secret!)
+   -  you can type npx auth secret in your VsCode terminal to automatically create and add the secret to your .env.local file
+   -  Read more: https://cli.authjs.dev
    - `AUTH_GITHUB_ID` - the GitHub OAuth client ID (create yours in [Github developer settings](https://github.com/settings/developers)
    - `AUTH_GITHUB_SECRET` - the GitHub OAuth client secret (create this in [Github developer settings](https://github.com/settings/developers))
 4. Create the database schema by running the SQL commands in `schema.sql` in your database (eg. by running the commands in Supabase Query Editor)
