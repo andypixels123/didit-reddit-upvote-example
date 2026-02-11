@@ -86,6 +86,9 @@ I still got this error when the deployment was successful:
    - /vercel/path0/node_modules/next/dist/compiled/jest-worker/processChild.js
    - Referenced from: /vercel/path0/.eslintrc.json
 
-   I had no issues with following the README and I found that you can create a Next Auth secret string from the terminal by typing - npx auth secret . This will automatically add the string to the .env.local file.
+  I had no issues with following the README and I found that you can create a Next Auth secret string from the terminal by typing - npx auth secret . This will automatically add the string to the .env.local file.
 
   I have the app running and I'm able to login using my Github account. I have changed the 'homepage url' and 'authorization callback url' in Github -> settings -> developer settings -> OAuth Apps
+
+  I am able to post a comment, reply to a comment and reply to a reply. Not sure if there are any more bugs to fix?
+
