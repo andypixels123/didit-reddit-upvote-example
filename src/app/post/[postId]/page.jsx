@@ -4,7 +4,9 @@ import { Vote } from "@/components/Vote";
 import { db } from "@/db";
 
 export default async function SinglePostPage({ params }) {
-  const postId = params.postId;
+  const { postId } = await params;
+  // const postId = await params.postId;
+  // console.log(postId);
 
   const { rows: posts } = await db.query(
     `SELECT posts.id, posts.title, posts.body, posts.created_at, users.name, 
